@@ -1,10 +1,11 @@
 ﻿namespace Rsc.EReceipts.Domain.ValueObjects;
 
-public record Buyer(
-    string Type,
-    string Id,
-    string Name,
-    string MobileNumber,
-    string PaymentNumber
-);
+public class Buyer
+{
+    public string Type { get; set; }
+    public string Id { get; set; }
+    public string Name { get; set; }
+    public string MobileNumber { get; set; }
+    public string PaymentNumber { get; set; }
+}
 

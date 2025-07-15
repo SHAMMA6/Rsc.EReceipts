@@ -1,4 +1,4 @@
-﻿namespace Rsc.EReceipts.Domain.Models;
+﻿namespace Rsc.EReceipts.Domain.ValueObjects;
 
 public class Header
 {

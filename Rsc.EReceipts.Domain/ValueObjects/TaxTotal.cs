@@ -1,4 +1,8 @@
 ﻿namespace Rsc.EReceipts.Domain.ValueObjects;
 
-public record TaxTotal(string TaxType, decimal Amount);
+public class TaxTotal
+{
+    public string TaxType { get; set; }
+    public decimal Amount { get; set; }
+}
 

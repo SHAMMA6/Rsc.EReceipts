@@ -1,3 +1,8 @@
 ﻿namespace Rsc.EReceipts.Domain.ValueObjects;
 
-public record DiscountData(decimal Amount, string Description, decimal Rate);
+public class DiscountData
+{
+    public decimal Amount { get; set; }
+    public string Description { get; set; }
+    public decimal Rate { get; set; }
+}

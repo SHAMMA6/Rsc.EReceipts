@@ -1,4 +1,9 @@
 ﻿namespace Rsc.EReceipts.Domain.ValueObjects;
 
-public record DocumentType(string ReceiptType, string TypeVersion);
+public class DocumentType
+{
+    public string ReceiptType { get; set; }
+    public string TypeVersion { get; set; }
+}
+
 
