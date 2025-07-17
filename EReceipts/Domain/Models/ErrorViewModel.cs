@@ -1,4 +1,4 @@
-namespace Rsc.EReceipts.Presintation.Models
+namespace EReceipts.Domain.Models
 {
     public class ErrorViewModel
     {
