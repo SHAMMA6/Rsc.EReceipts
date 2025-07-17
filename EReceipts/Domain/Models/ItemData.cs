@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EReceipts.Domain.ValueObjects;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 namespace EReceipts.Domain.Models;
@@ -46,17 +47,17 @@ public class ItemData
     [Precision(18, 5)]
     public decimal Total { get; set; }
 
-    public List<ValueObjects.DiscountData> CommercialDiscountData { get; set; } = new List<ValueObjects.DiscountData>();
+    public List<DiscountData> CommercialDiscountData { get; set; } = new List<DiscountData>();
 
-    public List<ValueObjects.DiscountData> ItemDiscountData { get; set; } = new List<ValueObjects.DiscountData>();
+    public List<DiscountData> ItemDiscountData { get; set; } = new List<DiscountData>();
 
-    public ValueObjects.DiscountData AdditionalCommercialDiscount { get; set; }
+    public DiscountData AdditionalCommercialDiscount { get; set; }
 
-    public ValueObjects.DiscountData AdditionalItemDiscount { get; set; }
+    public DiscountData AdditionalItemDiscount { get; set; }
 
     [Precision(18, 5)]
     public decimal ValueDifference { get; set; }
 
-    public List<ValueObjects.TaxableItem> TaxableItems { get; set; } = new List<ValueObjects.TaxableItem>();
+    public List<TaxableItem> TaxableItems { get; set; } = new List<TaxableItem>();
 }
 
