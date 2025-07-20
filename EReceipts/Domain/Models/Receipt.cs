@@ -8,24 +8,8 @@ namespace EReceipts.Domain.Models;
 
 public class Receipt
 {
-    [Key]
-    public Guid Id { get; set; }
-
-    [Required(ErrorMessage = "ReceiptNumber is mandatory.")]
-    [StringLength(50, ErrorMessage = "ReceiptNumber cannot exceed 50 characters.")]
-    public string ReceiptNumber { get; set; }
-
-    [Required(ErrorMessage = "UUID is mandatory.")]
-    [StringLength(256, ErrorMessage = "UUID cannot exceed 256 characters (SHA256 format expected).")]
-    public string Uuid { get; set; }
-
-    [Required(ErrorMessage = "PreviousUUID is mandatory.")]
-    [StringLength(256, ErrorMessage = "PreviousUUID cannot exceed 256 characters (SHA256 format expected).")]
-    public string PreviousUuid { get; set; }
-
-    [StringLength(256, ErrorMessage = "ReferenceOldUUID cannot exceed 256 characters.")]
-    public string ReferenceOldUuid { get; set; }
-
+    //[Key]
+    //public Guid Id { get; set; }
     [Required(ErrorMessage = "Header information is mandatory.")]
     public Header Header { get; set; }
 
